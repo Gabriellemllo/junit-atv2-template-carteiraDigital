@@ -1,10 +1,10 @@
 package com.example;
 
 public class DigitalWallet {
-    private final String owner;
-    private double balance;
-    private boolean verified;
-    private boolean locked;
+    private final String owner; // proprietário da carteira
+    private double balance; // saldo da carteira
+    private boolean verified; // se a carteira está  = verificada
+    private boolean locked; // se a carteira está = bloqueada
 
     public DigitalWallet(String owner, double initialBalance) {
         if (owner == null || owner.isBlank()) throw new IllegalArgumentException("Owner required");
